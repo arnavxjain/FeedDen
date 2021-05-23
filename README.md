@@ -1,3 +1,3 @@
 # Feed Den
-- Smoothness Enhanced<br>
+- Smoothness Enhanced
 - The Templating Basic Social Media App 
