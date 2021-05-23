@@ -1,0 +1,60 @@
+:root {
+    --main-background-color: rgb(21,32,43);
+    --main-app-color: rgb(29,161,242);
+}
+
+.userCard {
+    width: 100%;
+}
+
+.account-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.account-card > .account-icon {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.account-card-info {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.account-card-info > h1, h2 {
+    color: var(--main-app-color);
+}
+
+.account-card > p {
+    margin-top: 10px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    text-align: center;
+    color: white !important;
+}
+
+.back-option {
+    transition: all 0.25s ease-in-out;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+}
+
+.back-option:hover {
+    transition: all 0.25s ease-in-out;
+    color: rgb(29,161,242);
+    background-color: rgb(46, 56, 66);
+}

@@ -1,0 +1,119 @@
+:root {
+    --main-background-color: rgb(21,32,43);
+    --main-app-color: rgb(29,161,242);
+}
+
+.feed {
+    width: 100%;
+    margin-left: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.mainAvat {
+    margin-right: 10px;
+}
+
+.subtitle {
+    padding: 5px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: var(--main-app-color);
+}
+
+.feed-new-message {
+    margin-top: 10px;
+    display: flex;
+    padding: 5px;
+}
+
+@media screen and (max-width: 617px) {
+    .feed {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+.feed-post {
+    color: white;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.post-header{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.post-header-linkType {
+    color: var(--main-app-color);
+    cursor: pointer;
+}
+
+.post-header-timstamp {
+    color: rgb(138, 138, 138);
+}
+
+/* .post-side-top {
+    display: flex;
+    align-items: center;
+} */
+
+.post-icon {
+    margin-right: 10px;
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.post-message {
+    padding: 10px;
+}
+
+.post-message > p {
+    margin-bottom: 10px;
+}
+
+.post-client-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 8px;
+    border-top: 1px solid gray;
+}
+
+.post-client-controls > .client-control-each {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.client-control-each:hover {
+    background-color:  rgb(46, 56, 66);
+    color: var(--main-app-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.colorTests {
+    color: rgb(31, 28, 73);
+}
+
+.feed-title {
+    color: var(--main-app-color);
+    text-align: center;
+    margin-bottom: 10px;
+}

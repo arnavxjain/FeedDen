@@ -1,0 +1,183 @@
+:root {
+    --main-background-color: rgb(21,32,43);
+    --main-app-color: rgb(29,161,242);
+}
+  
+.edit-page {
+    display: 'flex';
+    width: 100%;
+    justify-content: center;
+}
+
+.account-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.edit-page-header {
+    text-align: center;
+    color: var(--main-app-color);
+}
+
+h3.username-holder {
+    color: var(--main-app-color);
+}
+
+h1 {
+    margin: 0;
+}
+
+.username-holder input {
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 600;
+    color: gray;
+    border: 1px solid gray;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 7px;
+    margin-left: 10px;
+    outline: none;
+}
+
+.image-holder input {
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 600;
+    color: gray;
+    border: 1px solid gray;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 7px;
+    margin-left: 10px;
+    outline: none;
+}
+
+
+h3 {
+    margin-bottom: 10px;
+}
+
+h3.image-holder {
+    color: var(--main-app-color);
+}
+
+h3.email-holder {
+    color: var(--main-app-color);
+}
+
+.email-holder span {
+    color: gray;
+    border: 1px solid gray;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 7px;
+    margin-left: 35px;
+}
+
+.account-info-two {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-info .user-icon {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+textarea {
+    border: 1px solid gray;
+    border-radius: 10px;
+    resize: none;
+    color: white;
+    width: 99%;
+    outline: none;
+    margin-top: 15px;
+    background-color: transparent;
+    height: 100px;
+}
+
+.save-btn {
+    border: 1px solid gray;
+    background-color: transparent;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.save-btn:hover {
+    color: var(--main-app-color);
+    border: 1px solid var(--main-app-color)
+}
+
+.back-option {
+    transition: all 0.25s ease-in-out;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+}
+
+.back-option:hover {
+    transition: all 0.25s ease-in-out;
+    color: rgb(29,161,242);
+    background-color: rgb(46, 56, 66);
+}
+
+
+@keyframes message-animation {
+    from {
+        transform: scale(0) translateY(100px);
+    }
+    to {
+        transform: scale(5px) translateY(0);
+    }
+}
+
+#notification {
+    display: flex;
+    color: white;
+    display: none;
+    padding: 10px;
+    border-radius: 10px;
+    top: 20px;
+    right: 20px;
+    align-items: top;
+    background-color: rgb(46, 49, 45);
+    position: absolute;
+    justify-self: center;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+    animation: message-animation 0.5s;
+}
+
+#notification span {
+    display: flex;
+    align-items: center;
+}
+
+#notification span .check-icon {
+    color: rgb(34, 204, 34);
+    margin-right: 5px;
+}
+
+@media all and (max-width:530px) {
+    .edit-page {
+        flex-direction: column;
+    }
+} 

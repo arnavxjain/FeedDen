@@ -1,0 +1,155 @@
+:root {
+    --main-background-color: rgb(21,32,43);
+    --main-app-color: rgb(29,161,242);
+}
+
+.post-header > .option-icon {
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+
+.option-icon {
+    transition: all 0.25s ease-in-out;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.option-icon:hover {
+    transition: all 0.25s ease-in-out;
+    color: rgb(29,161,242);
+    background-color: rgb(46, 56, 66);
+}
+
+.btn-handlers {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.btn-handlers > button {
+    border: 1px solid gray;
+    background-color: transparent;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.btn-handlers > button:hover {
+    color: var(--main-app-color);
+    border: 1px solid var(--main-app-color);
+}
+
+.main-msg {
+    word-break: break-all;
+}
+
+@keyframes post-animation {
+    from {
+        transform: scale(0) translateY(100px);
+    }
+    to {
+        transform: scale(5px) translateY(0);
+    }
+}
+
+.post {
+    animation: post-animation 0.5s;
+}
+
+.message-client-controls {
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.comment-header {
+    color: var(--main-app-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.comments-main-div {
+    max-height: 80%;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: rgb(63, 63, 95);
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+
+.comment-controls {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.send-btn {
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    background-color: rgb(32, 63, 95);
+    transition: all 0.2s ease-in-out;
+}
+
+.send-btn:hover {
+    color: var(--main-app-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.comment-controls > input {
+    width: 100%;
+    margin-right: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-indent: 5px;
+    color: white;
+    height: 35px;
+    background-color: transparent;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.message-controls > input:focus {
+    border: 1px solid var(--main-app-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.comments-number {
+    margin-left: 2px;
+}
+
+.post-image {
+    cursor: pointer;
+}
+
+.modalImage {
+    border-radius: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: flex;
+}
+
+.post-header-linkType {
+    text-decoration: none;
+}

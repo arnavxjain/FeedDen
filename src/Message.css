@@ -1,0 +1,76 @@
+:root {
+    --main-background-color: rgb(21,32,43);
+    --main-app-color: rgb(29,161,242);
+}
+
+@keyframes message-animation {
+    from {
+        transform: scale(0) translateY(100px);
+    }
+    to {
+        transform: scale(5px) translateY(0);
+    }
+}
+
+.message {
+    padding: 10px;
+    color: white;
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-radius: 20px;
+    background-color: rgb(207, 215, 223);
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12)
+}
+
+.message .message-info {
+    color: rgb(161, 161, 161);
+}
+
+.highlight-text {
+    text-decoration: none;
+    color: var(--main-app-color) !important;
+}
+
+.myself {
+    animation: message-animation 0.5s;
+    background-color: rgb(33, 83, 133);
+    margin-left: auto;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12)
+}
+
+.false {
+    animation: message-animation 0.5s;
+}
+
+.false .message-info {
+    color: rgb(161, 161, 161) !important;
+}
+
+.message .main-message {
+    color: white;
+}
+
+.false .main-message {
+    color: var(--main-background-color);
+}
+
+.main-message-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-icon {
+    margin-right: 6px;
+}
+
+.message-img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px !important;
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+}

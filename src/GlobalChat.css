@@ -1,0 +1,111 @@
+:root {
+    --main-background-color: rgb(21,32,43);
+    --main-app-color: rgb(29,161,242);
+}
+
+.globe {
+    display: flex;
+    flex-direction: column;
+}
+
+.globe-title {
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--main-app-color);
+}
+
+.messages-box {
+    padding-top: 20px;
+    border-radius: 10px;
+    /* width: 100%; */
+    background-color: rgb(32, 63, 95);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 5px;
+    height: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 360px;
+    max-height: 360px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.message-controls {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.send-btn {
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    background-color: rgb(32, 63, 95);
+    transition: all 0.2s ease-in-out;
+}
+
+.send-btn:hover {
+    color: var(--main-app-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.img-btn {
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    background-color: rgb(32, 63, 95);
+    transition: all 0.2s ease-in-out;
+}
+
+.img-btn:hover {
+    color: var(--main-app-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.message-controls > input {
+    width: 100%;
+    margin-right: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-indent: 5px;
+    color: white;
+    height: 35px;
+    background-color: transparent;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.message-controls > input:focus {
+    border: 1px solid var(--main-app-color);
+    transition: all 0.2s ease-in-out;
+}
+
+#messagesDiv {
+    transition: all 0.2s ease-in;
+}
+
+ .globe input[type="file"] {
+    display: none;
+}
+.globe .custom-file-upload {
+    border: none;
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 10px;
+    /* padding: 6px 12px; */
+    cursor: pointer;
+    color: white;
+}
+
+.globe .img-holder {
+    text-align: center;
+    color: var(--main-app-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+}

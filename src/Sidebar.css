@@ -1,0 +1,67 @@
+:root {
+    --main-background-color: rgb(21,32,43);
+    --main-app-color: rgb(29,161,242);
+}
+
+.sidebar {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    background-color: rgba(74, 89, 112, 0.753);
+    border-radius: 30px;
+    height: fit-content;
+    padding: 5px;
+}
+
+.sidebar > h2 {
+    margin: 0;
+}
+
+.sidebar-option {
+    transition: all 0.25s ease-in-out;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sidebar-option:hover {
+    transition: all 0.25s ease-in-out;
+    color: rgb(29,161,242);
+    background-color: rgb(46, 56, 66);
+}
+
+.sidebar-option:hover .tooltip {
+    display: block;
+}
+
+.sidebar .title {
+    text-align: center;
+}
+
+@keyframes tooltip-animation {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(5px)
+    }
+}
+
+.sidebar-option > .tooltip {
+    position: absolute;
+    display: none;
+    margin-bottom: 85px;
+    background-color: rgba(32, 53, 75, 0.789);
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+    animation: tooltip-animation 0.2s;
+}
+
+.video-call-icon {color: white;}

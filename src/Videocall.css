@@ -1,0 +1,186 @@
+:root {
+    --main-background-color: rgb(21,32,43);
+    --main-app-color: rgb(29,161,242);
+}
+
+.videocall {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.info-header {
+    color: white;
+    text-align: center;
+}
+
+.copy-code-div {
+    border: 1px solid gray;
+    padding: 10px;
+    color: var(--main-app-color);
+    border-radius: 15px;
+    margin: 0;
+}
+
+.copy-head {
+    margin-left: auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy-head > span {
+    margin: 0;
+    color: white;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.copy-head > span:hover {
+    color: var(--main-app-color);
+    transition: all 0.2s ease-in-out;
+}
+
+#notification {
+    display: flex;
+    color: white;
+    display: none;
+    padding: 10px;
+    border-radius: 10px;
+    top: 20px;
+    right: 20px;
+    align-items: top;
+    background-color: rgb(46, 49, 45);
+    position: absolute;
+    justify-self: center;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+    animation: message-animation 0.5s;
+}
+
+#notification span {
+    display: flex;
+    align-items: center;
+}
+
+#notification span .check-icon {
+    color: rgb(34, 204, 34);
+    margin-right: 5px;
+}
+
+.start-options-div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.mid-main {
+    border: 1px solid gray;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.video-preview {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+video {
+    height: 250px;
+    /*  width: fit-content; */
+    padding: 10px;
+    border-radius: 22px;
+}
+
+.main-link-div {
+    width: fit-content;
+    /* margin-left: auto; */
+    margin-right: 10px;
+}
+
+.start-options-div button {
+    border-radius: 7px;
+    width: fit-content;
+    padding: 10px;
+    border: none;
+    font-weight: 600;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    cursor: pointer;
+    background-color: var(--main-app-color);
+    color: var(--main-background-color);
+    transition: all 0.2s ease-in-out;
+    margin-left: 10px;
+}
+
+button:hover {
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+  
+.toggle-button {
+    margin-left: auto;
+    margin-right: auto;
+background: gray;
+width: 40px;
+height: 20px;
+border-radius: 30px;
+padding: 5px;
+cursor: pointer;
+transition: all 300ms ease-in-out;
+}
+
+.toggle-button > .inner-circle {
+background: white;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+transition: all 300ms ease-in-out;
+}
+
+.toggle-button.active {
+background: #00ff22;
+}
+
+.toggle-button.active > .inner-circle {
+margin-left: 20px;
+}
+
+.join-div {
+    display: grid;
+    place-items: center;
+}
+
+.join-btn {
+    margin-top: 20px;
+    border-radius: 7px;
+    width: fit-content;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    background-color: var(--main-app-color);
+    color: var(--main-background-color);
+    transition: all 0.2s ease-in-out;
+    margin-left: 10px;
+}
+
+.join-btn:hover {
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+  

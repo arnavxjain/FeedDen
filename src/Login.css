@@ -1,0 +1,93 @@
+:root {
+    --main-background-color: rgb(21,32,43);
+    --main-app-color: rgb(29,161,242);
+  }
+  
+
+.login {
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    height: 100vh;
+    margin-bottom: 100px;
+    background-color: rgb(21,32,43);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(21,32,43);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12)
+}
+
+.login-form > input {
+    margin: 10px;
+    width: 300px;
+    height: 35px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 5px;
+    text-indent: 5px;
+}
+
+.login-form > input:focus {
+    border: 1px solid var(--main-app-color);
+}
+
+.login button {
+    border: 1px solid gray;
+    background-color: transparent;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.login-form .login-btn:hover {
+    color: var(--main-app-color);
+    border: 1px solid var(--main-app-color);
+}
+
+.form-title {
+    color: var(--main-app-color);
+    text-align: center;
+}
+
+.login .signup-btn {
+    width: fit-content;
+    width: 280px !important;
+    transform: translateY(-150px);
+}
+
+.loginTextArea {
+    height: 100px;
+    border-radius: 10px;
+    padding: 5px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    width: 90%;
+    resize: none;
+    display: flex;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: all 0.5s ease-in-out;
+}
+
+.loginTextArea:focus {
+    border: 1px solid var(--main-app-color);
+    transform: all 0.5s ease-in-out;
+}
