@@ -9,5 +9,6 @@
 - Material-UI
 - Routing with `react-router-dom`
 
-### Feed Den is managed and developed by 
-[arnavjain.in]
+### Feed Den is managed and developed by Arnav Jain
+- [arnavjain.in](https://arnavjain.in)
+- [arnavjainn06 - Github](https://github.com/arnavjainn06)
