@@ -1,7 +1,6 @@
-# Feed Den
-- Smoothness Enhanced
-- The Templating Basic Social Media App 
-- This is a prototype for a complex Social Media App that is still under development
+# Feed Den - Smoothness Enhanced
+- The Basic Social Media App For Connectivity 
+- This is a prototype for a complex Social Media App that is still under development.
 
 ## This app uses 👇
 - The React Framework
@@ -9,3 +8,6 @@
 - Firebase Firestore/Storage
 - Material-UI
 - Routing with `react-router-dom`
+
+### Feed Den is managed and developed by 
+[arnavjain.in]
